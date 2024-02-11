@@ -1,0 +1,20 @@
+Partie 1:
+
+q1) torrent create "C:\Users\samba\Downloads\IPFS-command.png" -o td2_q1_decent.torrent
+
+q2)copy "C:\Users\samba\Downloads\IPFS-command.png" "C:\Users\samba\Downloads\partition1"
+torrent create "C:\Users\samba\Downloads\partition1" -o partition1.torrent
+Avec la commande  info partition1.torrent, on voit que l'image IPFS-command.png est à l'intérieur de partition1.torrent. De plus, le hash est différent.
+
+q3) copy "C:\Users\samba\Downloads\partition1" "C:\Users\samba\Downloads\partition2"
+torrent create "C:\Users\samba\Downloads\partition2" -o partition2.torrent
+Il ne semble pas y avoir le dossier partition1, seulement l'image. De plus, le hash est différent.
+
+Partie 2:
+
+q1) QmPS8XMKg2A3G8M3ajZPDdX3D2WygRPiTLEv6zA3mSmEcz
+
+q2) Torrent se base sur un tracker centralisé pour simplifier le partage de fichiers alors qu'IPFS fonctionne de manière décentralisée ainsi il n'y a pas besoin de tracker.
+Les fichiers sur IPFS sont plus lourds.
+
+q3) partition2 à le même CID que partition1
